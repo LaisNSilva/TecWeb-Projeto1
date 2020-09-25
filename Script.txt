@@ -1,0 +1,20 @@
+CREATE DATABASE organizador;
+USE organizador;
+CREATE TABLE Tarefas (
+	id INT NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(40) NOT NULL,
+	materia VARCHAR(40),
+	tarefa VARCHAR(40),
+	data DATE,
+	anotacao VARCHAR(40),
+	PRIMARY KEY(id)
+); 
+INSERT INTO Tarefas (nome, materia, tarefa, data, anotacao) VALUES ('Lais', 'TecWeb', 'projeto 1', '20200925', 'dificil');
+CREAT TABLE Login (
+	id INT NOT NULL  AUTO_INCREMENT,
+	nome VARCHAR(40) NOT NULL,
+	user VARCHAR(40) NOT NULL,
+	senha VARCHAR(40) NOT NULL,
+	PRIMARY KEY(id)
+);
+INSERT INTO Login (nome, user, senha) VALUES ('Lais', 'laisns', '12345');
